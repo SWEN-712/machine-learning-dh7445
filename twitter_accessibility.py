@@ -115,7 +115,7 @@ for tweet_image in images_alt_text[0:19]:
     try:
         image_caption.append([analysis["description"]["captions"][0]["text"].capitalize(), image_url])
     except:
-        image_caption.append("Image could not be captioned", image_url)
+        image_caption.append(["Image could not be captioned", image_url])
 # endregion
 
 # region Calculate Similarities
